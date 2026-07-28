@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" width="300" height="72">
+  <style>
+    .brand-name {
+      font-family: 'Impact', 'Arial Black', -apple-system, sans-serif;
+      font-size: 50px;
+      font-weight: 900;
+      fill: #111111;
+      letter-spacing: -0.5px;
+    }
+    .brand-subtitle {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      fill: #111111;
+      letter-spacing: 3.1px;
+    }
+  </style>
+  <text x="0" y="42" class="brand-name">GOODMAN</text>
+  <text x="2" y="64" class="brand-subtitle">REAL ESTATE SOLUTIONS</text>
+</svg>

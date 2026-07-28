@@ -1,0 +1,6 @@
+{
+  "name": "Goodman Real Estate Solutions",
+  "description": "Luxury Commercial Real Estate Website detailing premium advisory, development, and portfolio services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-brand-red: #C41200;
+  --color-brand-light: #F9FAFB;
+  --color-brand-white: #FFFFFF;
+  --color-brand-dark: #111111;
+  --color-brand-gray: #4B5563;
+  --color-brand-charcoal: #1A1D20;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: var(--color-brand-light);
+    color: var(--color-brand-dark);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+h1, h2, h3, h4, .font-playfair, .font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
+
+body, p, span, li, a, button, label, input, textarea, select, .font-inter, .font-sans {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Reveal animation classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Elegant hover states for buttons and cards */
+.btn-primary, .btn-secondary, .clickable-card, .hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .clickable-card:hover, .hover-lift:hover {
+  transform: translateY(-4px) !important;
+}
+
+/* Custom scrollbar to match the high-end luxury aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5C7CD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A4AF;
+}
